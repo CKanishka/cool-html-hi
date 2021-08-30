@@ -1,0 +1,137 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fef3c7;
+    background-image: url(./static/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow:hidden
+  }
+  .stroke {
+    -webkit-text-stroke-width: 2px;
+    -moz-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #111827;
+    -moz-text-stroke-color: #111827;
+    color: transparent;
+  }
+  
+  .shadow {
+    text-shadow: 6px 6px #db2777;
+  }
+  
+  h1 {
+    font-size: 15vw;
+    font-weight: bold;
+    letter-spacing: 5px;
+  }
+  .move-hand {
+    animation: waving-hand 3s infinite;
+    transform-origin: 75% 75%;
+    display: inline-block;
+  }
+  
+  @keyframes waving-hand {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(20deg);
+    }
+    20% {
+      transform: rotate(-10deg);
+    }
+    30% {
+      transform: rotate(20deg);
+    }
+    40% {
+      transform: rotate(-10deg);
+    }
+    50% {
+      transform: rotate(20deg);
+    }
+    60% {
+      transform: rotate(-10deg);
+    }
+    70% {
+      transform: rotate(20deg);
+    }
+    80% {
+      transform: rotate(-10deg);
+    }
+    90% {
+      transform: rotate(20deg);
+    }
+    100% {
+      transform: rotate(-10deg);
+    }
+  }
+  
+  .flower-shower {
+    position:absolute
+  }
+  
+  .flower-shower div {
+    display:inline-block;
+  }
+  .flower-shower div:nth-child(1){
+    left:20%;
+    animation: falling-flowers 3s ease-in infinite;
+    animation-delay:-7s
+  }
+  .flower-shower div:nth-child(2){
+    left:50%;
+    animation: falling-flowers 7s ease-in infinite;
+   animation-delay:-5s
+  }
+  .flower-shower div:nth-child(3){
+    left:70%;
+    animation: falling-flowers 8s ease-in infinite;
+   animation-delay:0s
+  }
+  .flower-shower div:nth-child(4){
+    left:0%;
+    animation: falling-flowers 7s ease-in infinite;
+    animation-delay:-5s
+  }
+  .flower-shower div:nth-child(5){
+    left:85%;
+    animation: falling-flowers 5s ease-in infinite;
+   animation-delay:-5s
+  }
+  .flower-shower div:nth-child(6){
+    left:0%;
+    animation: falling-flowers 7s ease-in infinite;
+  }
+  .flower-shower div:nth-child(7){
+    left:30%;
+    animation: falling-flowers 7s ease-in infinite;
+  }
+  
+  .scale2x{
+    transform:scale(2)
+  }
+  @keyframes falling-flowers {
+    0%{
+      opacity:0;
+      transform:translateY(-150%) rotate(0deg)
+    }
+    10%{
+    opacity:1;
+    transform:translateY(-100%) rotate(30deg)
+    }
+    25%{
+      transform:translateY(-50%) rotate(45deg)
+    }
+    50%{
+      transform:translateY(0%) rotate(90deg)
+    }
+    75%{
+        transform:translateY(50%) rotate(90deg)
+      }
+   100%{
+      opacity:0;
+      transform:translateY(200%) rotate(180deg)
+    }
+  }
